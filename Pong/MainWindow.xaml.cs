@@ -64,6 +64,7 @@ namespace Pong
                 Pong.MovePlayerPaddleDown(deltaTime);
             }
             Pong.Update();
+            Pong.MoveAIPaddle(deltaTime);
         }
 
         private void Window_KeyDown(object sender, KeyEventArgs e)
