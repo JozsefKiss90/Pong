@@ -32,7 +32,7 @@ public class Paddle
     {
         double newPosition = Canvas.GetTop(Shape) + Speed * deltaTime;
         
-        double limit = 370; 
+        double limit = 360; 
         if (newPosition + Shape.Height > limit)
         {
             newPosition = limit - Shape.Height;

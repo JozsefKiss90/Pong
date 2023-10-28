@@ -21,21 +21,30 @@ namespace Pong
     {
         private Game Pong;
         private Canvas GameCanvas;
+        private Grid GameGrid;
         private HashSet<Key> pressedKeys = new HashSet<Key>();
         private Stopwatch stopwatch = new Stopwatch();
     
         public MainWindow()
         {
             InitializeComponent();
+            GameGrid = new Grid
+            {
+                HorizontalAlignment = HorizontalAlignment.Center,
+                VerticalAlignment = VerticalAlignment.Center
+            };
+
             GameCanvas = new Canvas
             {
-                HorizontalAlignment = HorizontalAlignment.Stretch,
-                VerticalAlignment = VerticalAlignment.Stretch
+                Background = Brushes.Black,
+                Height = 360,
+                Width = 580
             };
-                
-            Content = GameCanvas;
+            
+            GameGrid.Children.Add(GameCanvas); 
+            Content = GameGrid;
             Pong = new Game(GameCanvas); 
-        
+            
             var timer = new DispatcherTimer { Interval = TimeSpan.FromMilliseconds(16) }; 
             timer.Tick += GameLoop;
             timer.Start();
