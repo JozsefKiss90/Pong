@@ -40,7 +40,5 @@ public class Paddle
 
         Canvas.SetTop(Shape, newPosition);
     }
-    
-    
 
 }

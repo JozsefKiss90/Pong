@@ -29,14 +29,12 @@ public class Ball
         double newX = Canvas.GetLeft(Shape) + Direction.X * Speed;
         double newY = Canvas.GetTop(Shape) + Direction.Y * Speed;
 
-        // Bounce off top wall
         if (newY < 0)
         {
             newY = 0;
             Direction = new Vector(Direction.X, -Direction.Y);
         }
 
-        // Bounce off bottom wall
         if (newY + Shape.Height > canvasHeight)
         {
             newY = canvasHeight - Shape.Height;
