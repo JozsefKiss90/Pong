@@ -24,7 +24,7 @@ namespace Pong
         private Grid GameGrid;
         private HashSet<Key> pressedKeys = new HashSet<Key>();
         private Stopwatch stopwatch = new Stopwatch();
-    
+        
         public MainWindow()
         {
             InitializeComponent();

@@ -1,4 +1,5 @@
-﻿using System.Windows;
+﻿using System;
+using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Media;
 using System.Windows.Shapes;
@@ -50,12 +51,28 @@ public class Ball
     {
         Rect ballRect = new Rect(Canvas.GetLeft(Shape), Canvas.GetTop(Shape), Shape.Width, Shape.Height);
         Rect paddleRect = new Rect(Canvas.GetLeft(paddle.Shape), Canvas.GetTop(paddle.Shape), paddle.Shape.Width, paddle.Shape.Height);
-        
         return ballRect.IntersectsWith(paddleRect);
     }
     
     public void BounceOffPaddle()
     {
         Direction = new Vector(-Direction.X, Direction.Y);
+    }
+
+    public bool IncrementScore(Game game)
+    {
+        Rect ballRect = new Rect(Canvas.GetLeft(Shape), Canvas.GetTop(Shape), Shape.Width, Shape.Height);
+        if (ballRect.Left < 0)
+        {
+            game.PlayerScore += 1;
+            return true;
+        }
+        if (ballRect.Left > 580)
+        {
+            game.AIScore += 1;
+            return true;
+        }
+
+        return false;
     }
 }
