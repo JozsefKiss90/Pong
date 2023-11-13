@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\jozsi\\RiderProjects\\dummy3-general-JozsefKiss90\\Pong\\Pong\\Pong.csproj",
+      "projectUniqueName": "C:\\Users\\jozsi\\RiderProjects\\Pong\\Pong\\Pong.csproj",
       "projectName": "Pong",
-      "projectPath": "C:\\Users\\jozsi\\RiderProjects\\dummy3-general-JozsefKiss90\\Pong\\Pong\\Pong.csproj",
+      "projectPath": "C:\\Users\\jozsi\\RiderProjects\\Pong\\Pong\\Pong.csproj",
       "packagesPath": "C:\\Users\\jozsi\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\jozsi\\RiderProjects\\dummy3-general-JozsefKiss90\\Pong\\Pong\\obj\\",
+      "outputPath": "C:\\Users\\jozsi\\RiderProjects\\Pong\\Pong\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\jozsi\\AppData\\Roaming\\NuGet\\NuGet.Config"

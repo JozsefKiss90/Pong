@@ -17,7 +17,7 @@ using System.Windows.Threading;
 
 namespace Pong
 {
-    public partial class MainWindow : Window
+    public partial class PongWindow : Window
     {
         private Game Pong;
         private Canvas GameCanvas;
@@ -25,7 +25,7 @@ namespace Pong
         private HashSet<Key> pressedKeys = new HashSet<Key>();
         private Stopwatch stopwatch = new Stopwatch();
         
-        public MainWindow()
+        public PongWindow()
         {
             InitializeComponent();
             GameGrid = new Grid

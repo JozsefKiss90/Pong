@@ -62,7 +62,6 @@ public class Game
         if (isScore)
         {   
             UpdateScoreDisplay();
-            //restart the game while keeping the current score
             Canvas.SetLeft(PlayerPaddle.Shape, 10);
             Canvas.SetTop(PlayerPaddle.Shape, 170);
         

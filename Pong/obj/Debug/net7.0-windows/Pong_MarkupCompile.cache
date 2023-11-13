@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\jozsi\RiderProjects\dummy3-general-JozsefKiss90\Pong\Pong\obj\Debug\net7.0-windows\
+C:\Users\jozsi\RiderProjects\Pong\Pong\obj\Debug\net7.0-windows\
 Pong
 none
 false
 TRACE;DEBUG;NET;NET7_0;NETCOREAPP
-C:\Users\jozsi\RiderProjects\dummy3-general-JozsefKiss90\Pong\Pong\App.xaml
-11407045341
+C:\Users\jozsi\RiderProjects\Pong\Pong\App.xaml
+1397475049
 
-6-900521695
+6865997017
 198-759771931
-MainWindow.xaml;
+PongWindow.xaml;
 
 False
 

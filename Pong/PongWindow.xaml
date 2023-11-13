@@ -1,4 +1,4 @@
-﻿<Window x:Class="Pong.MainWindow"  KeyDown="Window_KeyDown" KeyUp="Window_KeyUp"
+﻿<Window x:Class="Pong.PongWindow"  KeyDown="Window_KeyDown" KeyUp="Window_KeyUp"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
